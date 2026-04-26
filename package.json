@@ -1,0 +1,10 @@
+{
+  "name": "placement-predictor",
+  "version": "1.0.0",
+  "description": "Machine learning placement prediction website built with Node.js",
+  "main": "server.py",
+  "scripts": {
+    "start": "python server.py",
+    "build:static": "python export_static_bundle.py"
+  }
+}

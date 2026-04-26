@@ -1,0 +1,194 @@
+{
+  "overview": {
+    "dataset": {
+      "totalStudents": 10000,
+      "placedCount": 4197,
+      "notPlacedCount": 5803,
+      "placementRate": 0.4197,
+      "averages": {
+        "cgpa": 7.698010000000001,
+        "aptitude": 79.4499,
+        "softSkills": 4.32396,
+        "sscMarks": 69.1594,
+        "hscMarks": 74.5015
+      },
+      "placementRateLabel": "41.97%"
+    },
+    "trainingInfo": {
+      "algorithm": "Logistic Regression",
+      "trainSize": 8000,
+      "testSize": 2000,
+      "featureCount": 10
+    },
+    "metrics": {
+      "accuracy": 0.8035,
+      "precision": 0.7601760176017601,
+      "recall": 0.7979214780600462,
+      "f1Score": 0.7785915492957747,
+      "confusionMatrix": {
+        "truePositive": 691,
+        "trueNegative": 916,
+        "falsePositive": 218,
+        "falseNegative": 175
+      },
+      "accuracyLabel": "80.35%",
+      "precisionLabel": "76.02%",
+      "recallLabel": "79.79%",
+      "f1ScoreLabel": "77.86%"
+    },
+    "featureImpact": [
+      {
+        "key": "AptitudeTestScore",
+        "label": "Aptitude Test Score",
+        "weight": 0.5418958093168779,
+        "impact": 1.0
+      },
+      {
+        "key": "PlacementTraining",
+        "label": "Placement Training",
+        "weight": 0.405038353305671,
+        "impact": 0.7474469193926201
+      },
+      {
+        "key": "ExtracurricularActivities",
+        "label": "Extracurricular Activities",
+        "weight": 0.3433377323755774,
+        "impact": 0.633586247526797
+      },
+      {
+        "key": "SSC_Marks",
+        "label": "SSC Marks",
+        "weight": 0.33302721609461594,
+        "impact": 0.6145594971742541
+      },
+      {
+        "key": "SoftSkillsRating",
+        "label": "Soft Skills Rating",
+        "weight": 0.2621923296799192,
+        "impact": 0.4838426966439228
+      },
+      {
+        "key": "HSC_Marks",
+        "label": "HSC Marks",
+        "weight": 0.2543176371908504,
+        "impact": 0.4693109502202039
+      },
+      {
+        "key": "Projects",
+        "label": "Projects",
+        "weight": 0.24246480806885903,
+        "impact": 0.44743805709535545
+      },
+      {
+        "key": "CGPA",
+        "label": "CGPA",
+        "weight": 0.23829752701504586,
+        "impact": 0.4397478683502782
+      },
+      {
+        "key": "Workshops/Certifications",
+        "label": "Workshops & Certifications",
+        "weight": 0.11695372814935504,
+        "impact": 0.2158232747671341
+      },
+      {
+        "key": "Internships",
+        "label": "Internships",
+        "weight": 0.015320674074431884,
+        "impact": 0.028272361238123173
+      }
+    ],
+    "createdAt": "2026-04-26T11:13:15.278197+00:00"
+  },
+  "predictor": {
+    "featureConfig": [
+      {
+        "key": "CGPA",
+        "type": "number",
+        "label": "CGPA"
+      },
+      {
+        "key": "Internships",
+        "type": "number",
+        "label": "Internships"
+      },
+      {
+        "key": "Projects",
+        "type": "number",
+        "label": "Projects"
+      },
+      {
+        "key": "Workshops/Certifications",
+        "type": "number",
+        "label": "Workshops & Certifications"
+      },
+      {
+        "key": "AptitudeTestScore",
+        "type": "number",
+        "label": "Aptitude Test Score"
+      },
+      {
+        "key": "SoftSkillsRating",
+        "type": "number",
+        "label": "Soft Skills Rating"
+      },
+      {
+        "key": "ExtracurricularActivities",
+        "type": "binary",
+        "label": "Extracurricular Activities"
+      },
+      {
+        "key": "PlacementTraining",
+        "type": "binary",
+        "label": "Placement Training"
+      },
+      {
+        "key": "SSC_Marks",
+        "type": "number",
+        "label": "SSC Marks"
+      },
+      {
+        "key": "HSC_Marks",
+        "type": "number",
+        "label": "HSC Marks"
+      }
+    ],
+    "means": [
+      7.6956874999999485,
+      1.04,
+      2.019125,
+      1.00325,
+      79.357625,
+      4.322349999999939,
+      0.582,
+      0.7285,
+      69.132625,
+      74.398875
+    ],
+    "stds": [
+      0.6404120957194216,
+      0.6604165352260856,
+      0.8674729012337856,
+      0.9038746801963121,
+      8.144521432188364,
+      0.4102413649304507,
+      0.49323016939353614,
+      0.44473334707439466,
+      10.432834495446267,
+      8.91246451518185
+    ],
+    "weights": [
+      0.23829752701504586,
+      0.015320674074431884,
+      0.24246480806885903,
+      0.11695372814935504,
+      0.5418958093168779,
+      0.2621923296799192,
+      0.3433377323755774,
+      0.405038353305671,
+      0.33302721609461594,
+      0.2543176371908504
+    ],
+    "bias": -0.6331793008492647
+  }
+}
